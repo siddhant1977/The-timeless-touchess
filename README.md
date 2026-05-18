@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Timeless Touches | Luxury Interior Design Studio
 
-## Getting Started
+A state-of-the-art, fully responsive, and highly interactive luxury interior design website built using **Next.js**, **TypeScript**, and **Vanilla CSS**. Designed with high-contrast, gold-and-white editorial layouts and custom animations to represent a premium brand identity.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- **Luxury Branding**: Centered custom serif typography header, dynamic gold styling, and premium scroll animations.
+- **Dynamic Anchoring & Cross-Page Routing**: Smooth transitions from any page (including the Enquiry page) back to homepage sections (`Our Vision`, `Gallery`, `Services`, `About Us`).
+- **Interactive Connect Form**: A "Join Us" Lead Capture form on the Enquiry page that compiles user inputs and hands them off directly to WhatsApp (`+91 9278500500`) with a custom prefilled lead message.
+- **Premium Interactivity**: High-end link animations, custom touch styling, responsive cards, and clean typography scales.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: [Next.js (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Styling**: Vanilla CSS Modules (Sophisticated, custom-scoped modular styling)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+Install all required node packages and dependencies:
+
+```bash
+npm install
+```
+
+### 2. Run the Development Server
+
+Start the local server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the live site locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Compile and optimize the code for production deployment:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment & Rendering Guide
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is fully ready for deployment on any modern platform.
 
-## Deploy on Vercel
+### Option A: Deploying on Vercel (Recommended - Zero Config)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Sign in to your [Vercel Account](https://vercel.com).
+2. Click **Add New** > **Project**.
+3. Import your GitHub repository.
+4. Keep the default Next.js build settings:
+   - **Framework Preset**: `Next.js`
+   - **Build Command**: `next build`
+   - **Output Directory**: `.next`
+5. Click **Deploy**. Vercel will automatically host your live luxury studio website in under a minute!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Option B: Deploying on Render (render.com)
+
+1. Sign in to your [Render Dashboard](https://dashboard.render.com).
+2. Click **New** > **Web Service**.
+3. Connect your GitHub account and select this repository.
+4. Set the following configurations:
+   - **Runtime**: `Node`
+   - **Build Command**: `npm run build`
+   - **Start Command**: `npm run start`
+5. Choose a plan and click **Create Web Service**.
+
+### Option C: Deploying on Netlify
+
+1. Sign in to [Netlify](https://app.netlify.com).
+2. Choose **Add new site** > **Import an existing project**.
+3. Select GitHub and import your repository.
+4. Netlify will automatically detect Next.js and apply the correct build settings.
+5. Click **Deploy Site**.
