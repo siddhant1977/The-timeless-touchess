@@ -1,0 +1,220 @@
+.section {
+    padding: var(--space-xl) 5%;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    margin-bottom: var(--space-xs);
+}
+
+.heading {
+    font-family: var(--font-luxury);
+    font-size: var(--fs-display);
+    color: #111;
+    margin: 0;
+    line-height: 1;
+}
+
+.goldText {
+    color: var(--accent);
+    font-style: italic;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background: transparent;
+    transition: transform 0.4s ease;
+}
+
+.imageWrapper {
+    position: relative;
+    aspect-ratio: 3/4;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+    transition: transform 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.viewText {
+    color: #111;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid rgba(201, 167, 114, 0.4);
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.cardContent {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.cardTitle {
+    font-family: var(--font-luxury);
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.cardDesc {
+    font-family: var(--font-serif);
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    line-height: 1.6;
+    font-style: italic;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card:hover .cardTitle {
+    color: var(--accent);
+}
+
+/* Hover State */
+.card:hover .image {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* Modal Styling */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-md);
+}
+
+.modalContent {
+    background: #fff;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: var(--space-lg);
+    border-radius: 4px;
+}
+
+.closeBtn {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    color: #111;
+    z-index: 10;
+}
+
+.modalHeader {
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.modalTitle {
+    font-family: var(--font-luxury);
+    font-size: var(--fs-xl);
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.modalDesc {
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+}
+
+.galleryItem {
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.galleryImage {
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modalContent {
+        padding: var(--space-md);
+    }
+
+    .galleryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        font-size: var(--fs-xl);
+    }
+
+    .cardContent {
+        padding: var(--space-xs) 0;
+    }
+}

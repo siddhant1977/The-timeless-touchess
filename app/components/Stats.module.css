@@ -1,0 +1,47 @@
+.stats {
+    padding: 6rem 2rem;
+    background: var(--background);
+    text-align: center;
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: var(--foreground);
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    /* Center items in their tracks */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.icon {
+    color: var(--foreground);
+    opacity: 0.8;
+}
+
+.text h3 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-family: var(--font-sans);
+}

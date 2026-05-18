@@ -1,0 +1,103 @@
+.features {
+    padding: 4rem 2rem;
+    position: relative;
+    background: transparent;
+    /* Remove potential divider color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.imageSide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-left: auto;
+    /* Push to right on desktop */
+}
+
+.bgImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #ddd;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.contentSide {
+    z-index: 2;
+    margin-top: -100px;
+}
+
+.floatingCard {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: var(--radius-md);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.subLabel {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+}
+
+.subtext {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1.5fr;
+        /* Content Left, Image Right */
+        align-items: center;
+    }
+
+    .imageSide {
+        grid-column: 2;
+        grid-row: 1;
+        width: 90%;
+    }
+
+    .contentSide {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        margin-top: 50px;
+    }
+
+    .floatingCard {
+        max-width: 500px;
+        margin-right: -50px;
+        /* Overlap right */
+    }
+}

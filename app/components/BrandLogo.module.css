@@ -1,0 +1,162 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* Changed to row for a cleaner header strip */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 1.2rem;
+    /* Gap between monogram and text */
+    padding: 0.1rem 0;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    max-width: 100%;
+}
+
+/* Scroll State: Collapse everything but the monogram */
+.container.scrolled {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+}
+
+.scrolled .textWrapper {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    pointer-events: none;
+    transform: translateX(-20px);
+}
+
+.scrolled .monogramFrame {
+    width: 52px;
+    height: 52px;
+    margin: 0;
+}
+
+/* Monogram Frame - Focused 3D Bezel */
+.monogramFrame {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    /* Reduced size for "neat and clean" header fit */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* 3D Bezel Effect: Using background as the rim */
+    padding: 2.5px;
+    /* This creates the thickness of the bezel */
+    background: linear-gradient(135deg,
+            #d4af37 0%,
+            /* Gold */
+            #f7ef8a 25%,
+            /* Highlight */
+            #d4af37 50%,
+            /* Gold */
+            #cfb53b 75%,
+            /* Shadow gold */
+            #aa8a2e 100%
+            /* Deep gold */
+        );
+
+    /* 3D Depth Shadows */
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.2),
+        /* Outer shadow */
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        /* Top rim highlight */
+        inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+    /* Bottom rim shadow */
+
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+/* Inner shadow and clipping for the content inside the bezel */
+.monogramFrame::after {
+    content: '';
+    position: absolute;
+    inset: 2.5px;
+    /* Match padding */
+    border-radius: 50%;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    /* Inset depth for the content */
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* Marbled Background styling */
+.marbledBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bgImage {
+    object-fit: cover;
+    opacity: 1;
+    border-radius: 50%;
+    /* Ensure it fits the inner ring */
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Text outside the frame */
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Left align text too */
+    gap: 0;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.brandName {
+    font-family: var(--font-luxury);
+    font-size: 1.15rem;
+    /* Refined size */
+    letter-spacing: 0.18rem;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.trademark {
+    font-size: 0.75rem;
+    /* Slightly scaled with brandName */
+    font-weight: 900;
+    color: #000;
+    position: relative;
+    top: -0.5rem;
+    left: 0.15rem;
+    pointer-events: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        gap: 0.8rem;
+    }
+
+    .monogramFrame {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brandName {
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+    }
+}

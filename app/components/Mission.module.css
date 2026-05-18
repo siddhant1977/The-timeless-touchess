@@ -1,0 +1,52 @@
+.mission {
+    padding: 8rem 2rem;
+    background: var(--background);
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--foreground);
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(29, 43, 43, 0.8);
+    margin-bottom: 4rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+}

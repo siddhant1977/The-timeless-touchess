@@ -1,0 +1,91 @@
+.gallery {
+    padding: var(--space-xl) 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    padding: 0 5%;
+}
+
+.header h2 {
+    font-family: var(--font-luxury);
+    font-size: var(--fs-xxl);
+    color: #111;
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.header p {
+    font-family: var(--font-sans);
+    font-size: var(--fs-base);
+    color: #666;
+}
+
+.scrollContainer {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 var(--space-md) var(--space-md);
+    gap: var(--space-md);
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.imageCard {
+    flex: 0 0 calc(50% - var(--space-md));
+    position: relative;
+    aspect-ratio: 16/9;
+    scroll-snap-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.image {
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-md);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay span {
+    color: #fff;
+    font-family: var(--font-serif);
+    font-size: var(--fs-md);
+    font-style: italic;
+}
+
+.imageCard:hover .image {
+    transform: scale(1.05);
+}
+
+.imageCard:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .imageCard {
+        flex: 0 0 85%;
+    }
+
+    .header h2 {
+        font-size: var(--fs-xl);
+    }
+}
