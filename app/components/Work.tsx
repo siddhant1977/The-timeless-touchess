@@ -7,33 +7,36 @@ import { X } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Penthouses",
+        title: "Residential",
         image: "/work_penthouse.png",
         description: "Sky-high sanctuaries offering panoramic views and bespoke modern luxury.",
         gallery: [
-            "/work_penthouse.png", // Using thumb as gallery item for now
-            "/luxury_hero_bg_wide.png",
-            "/luxury_hero_bg_2.png"
+
+            "/residential.png"
         ]
     },
     {
         id: 2,
-        title: "Luxury Villas",
+        title: "Commercial",
         image: "/work_villa.png",
         description: "Expansive retreats that blend indoor elegance with outdoor serenity.",
         gallery: [
-            "/work_villa.png",
-            "/hero_luxury_interior_1767776090813.png"
+
+            "/office_commercial.png"
         ]
     },
     {
         id: 3,
-        title: "Commercial",
+        title: "Bespoke Furniture",
         image: "/work_commercial.png",
         description: "Statement spaces for hospitality and retail that define brand prestige.",
         gallery: [
-            "/work_commercial.png",
-            "/luxury_dining_wide.png"
+            "/fur1.png",
+            "/fur2.png",
+            "/fur3.png",
+            "/fur4.png",
+            "/fur5.png",
+            "/fur6.png"
         ]
     }
 ];

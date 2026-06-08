@@ -2,8 +2,8 @@ import styles from './Stats.module.css';
 import { Award, ShieldCheck, FileText, Coffee } from 'lucide-react';
 
 const stats = [
-    { icon: Award, title: "Expert since 1986", sub: "In flooring services" },
-    { icon: ShieldCheck, title: "Guaranteed product", sub: "Ten-year warranty" },
+    { icon: Award, title: "Expert since 2021", sub: "In Interior Services" },
+    { icon: ShieldCheck, title: "Guaranteed product", sub: "With Client Satisfaction" },
     { icon: FileText, title: "Study & advice", sub: "Personalized" },
     { icon: Coffee, title: "Free estimate", sub: "In 24 hour" },
 ];

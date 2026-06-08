@@ -21,7 +21,9 @@ export default function Footer() {
                 <div className={styles.column}>
                     <h3>Contact</h3>
                     <a href="tel:+919278500500">+91 9278500500</a>
-                    <a href="mailto:info@timelesstouches.com">info@timelesstouches.com</a>
+                    <a href="tel:+917982977314">+91 7982977314</a>
+                    <a href="mailto:shubham4agg@gmail.com">shubham4agg@gmail.com</a>
+                    <a href="mailto:thetimelesstouchess@gmail.com">thetimelesstouchess@gmail.com</a>
                     <div className={styles.socials}>
                         <a href="https://www.instagram.com/thetimelesstouches/" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                         <a href="#"><Youtube size={20} /></a>
