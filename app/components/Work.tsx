@@ -19,13 +19,18 @@ const projects = [
         id: 2,
         title: "Commercial",
         image: "/commercial/comm2.jpg",
-        description: "Bespoke corporate office spaces, reception lounges, and collaborative work environments crafted for performance and elegance.",
+        description: "Bespoke corporate office spaces, executive lounges, outdoor retreats, and collaborative environments crafted for performance and luxury.",
         gallery: [
             "/commercial/comm1.jpg",
             "/commercial/comm2.jpg",
             "/commercial/comm3.jpg",
             "/commercial/comm4.jpg",
             "/commercial/comm5.jpg",
+            "/commercial/comm6.jpg",
+            "/commercial/comm7.jpg",
+            "/commercial/comm8.jpg",
+            "/commercial/comm9.jpg",
+            "/commercial/comm10.jpg",
             "/office_commercial.png"
         ]
     },

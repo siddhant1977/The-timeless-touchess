@@ -10,6 +10,8 @@ const images = [
     { src: '/commercial/comm4.jpg', alt: 'Executive Lounge Seating' },
     { src: '/furniture/fur_new4.jpg', alt: 'Custom Marble Coffee Table & Sculptures' },
     { src: '/furniture/fur_new1.jpg', alt: 'Bespoke Side Table & Lounge Accent' },
+    { src: '/commercial/comm8.jpg', alt: 'Luxury Executive Lounge & Wall Feature' },
+    { src: '/commercial/comm9.jpg', alt: 'Outdoor Terrace Lounge Suite' },
 ];
 
 export default function Gallery() {
