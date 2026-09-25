@@ -117,6 +117,8 @@ export default function Work() {
                                         fill
                                         className={styles.galleryImage}
                                         sizes="(max-width: 768px) 100vw, 50vw"
+                                        loading="lazy"
+                                        quality={85}
                                     />
                                 </div>
                             ))}

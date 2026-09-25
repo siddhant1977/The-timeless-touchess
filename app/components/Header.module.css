@@ -106,19 +106,24 @@
 .mobileMenu {
     position: fixed;
     inset: 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.99);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 1001;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s ease;
+    transform: translate3d(0, -10px, 0);
+    will-change: opacity, transform;
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .mobileMenu.open {
     opacity: 1;
     pointer-events: all;
+    transform: translate3d(0, 0, 0);
 }
 
 .mobileNav {
