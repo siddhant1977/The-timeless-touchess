@@ -8,43 +8,43 @@ const projects = [
     {
         id: 1,
         title: "Residential",
-        image: "/work_penthouse.png",
-        description: "Sky-high sanctuaries offering panoramic views and bespoke modern luxury.",
+        image: "/residential/res8.jpg",
+        description: "Bespoke luxury residences, master suites, feature lounges, custom wardrobes, and panoramic outdoor terrace retreats.",
         gallery: [
-
-            "/residential.png"
+            "/residential/res1.jpg",
+            "/residential/res2.jpg",
+            "/residential/res3.jpg",
+            "/residential/res4.jpg",
+            "/residential/res5.jpg",
+            "/residential/res6.jpg",
+            "/residential/res7.jpg",
+            "/residential/res8.jpg",
+            "/residential/res9.jpg",
+            "/residential/res10.jpg",
+            "/residential.png",
+            "/work_penthouse.png"
         ]
     },
     {
         id: 2,
         title: "Commercial",
         image: "/commercial/comm2.jpg",
-        description: "Bespoke corporate office spaces, executive lounges, outdoor retreats, and collaborative environments crafted for performance and luxury.",
+        description: "Bespoke corporate office spaces, reception lounges, and collaborative work environments crafted for performance and elegance.",
         gallery: [
             "/commercial/comm1.jpg",
             "/commercial/comm2.jpg",
             "/commercial/comm3.jpg",
             "/commercial/comm4.jpg",
             "/commercial/comm5.jpg",
-            "/commercial/comm6.jpg",
-            "/commercial/comm7.jpg",
-            "/commercial/comm8.jpg",
-            "/commercial/comm9.jpg",
-            "/commercial/comm10.jpg",
             "/office_commercial.png"
         ]
     },
     {
         id: 3,
         title: "Bespoke Furniture",
-        image: "/furniture/fur_new4.jpg",
-        description: "Handcrafted luxury furniture, custom marble coffee tables, sculpted accents, and tailor-made cabinetry collections.",
+        image: "/fur1.png",
+        description: "Handcrafted statement furniture, custom luxury upholstery, carved accents, and bespoke cabinetry.",
         gallery: [
-            "/furniture/fur_new1.jpg",
-            "/furniture/fur_new2.jpg",
-            "/furniture/fur_new3.jpg",
-            "/furniture/fur_new4.jpg",
-            "/furniture/fur_new5.jpg",
             "/fur1.png",
             "/fur2.png",
             "/fur3.png",
