@@ -48,7 +48,7 @@ Looking forward to connecting with the studio!`;
                     <div className={styles.contactBlock}>
                         <span className={styles.label}>PRINCIPAL DESIGNERS</span>
                         <h3 className={styles.name}>Shubham Aggarwal</h3>
-                        <h3 className={styles.name} style={{ marginTop: '0.25rem' }}>Kushi Juneja</h3>
+                        <h3 className={styles.name} style={{ marginTop: '0.25rem' }}>Khushi Juneja</h3>
                     </div>
 
                     <div className={styles.contactBlock}>
