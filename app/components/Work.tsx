@@ -32,9 +32,14 @@ const projects = [
     {
         id: 3,
         title: "Bespoke Furniture",
-        image: "/work_commercial.png",
-        description: "Statement spaces for hospitality and retail that define brand prestige.",
+        image: "/furniture/fur_new4.jpg",
+        description: "Handcrafted luxury furniture, custom marble coffee tables, sculpted accents, and tailor-made cabinetry collections.",
         gallery: [
+            "/furniture/fur_new1.jpg",
+            "/furniture/fur_new2.jpg",
+            "/furniture/fur_new3.jpg",
+            "/furniture/fur_new4.jpg",
+            "/furniture/fur_new5.jpg",
             "/fur1.png",
             "/fur2.png",
             "/fur3.png",

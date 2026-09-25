@@ -8,6 +8,8 @@ const images = [
     { src: '/commercial/comm1.jpg', alt: 'Luxury Office Reception' },
     { src: '/commercial/comm2.jpg', alt: 'Modern Open Workstation Space' },
     { src: '/commercial/comm4.jpg', alt: 'Executive Lounge Seating' },
+    { src: '/furniture/fur_new4.jpg', alt: 'Custom Marble Coffee Table & Sculptures' },
+    { src: '/furniture/fur_new1.jpg', alt: 'Bespoke Side Table & Lounge Accent' },
 ];
 
 export default function Gallery() {
