@@ -18,10 +18,14 @@ const projects = [
     {
         id: 2,
         title: "Commercial",
-        image: "/work_villa.png",
-        description: "Expansive retreats that blend indoor elegance with outdoor serenity.",
+        image: "/commercial/comm2.jpg",
+        description: "Bespoke corporate office spaces, reception lounges, and collaborative work environments crafted for performance and elegance.",
         gallery: [
-
+            "/commercial/comm1.jpg",
+            "/commercial/comm2.jpg",
+            "/commercial/comm3.jpg",
+            "/commercial/comm4.jpg",
+            "/commercial/comm5.jpg",
             "/office_commercial.png"
         ]
     },

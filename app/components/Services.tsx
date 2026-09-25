@@ -17,7 +17,7 @@ const services = [
         id: 2,
         title: "Commercial Luxe",
         description: "Redefining professional spaces with an atmosphere of success and sophistication. We design corporate headquarters and boutique offices that inspire innovation and command respect.",
-        image: "/service-commercial.png",
+        image: "/commercial/comm2.jpg",
         link: "#commercial"
     },
     {
